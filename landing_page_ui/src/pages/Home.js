@@ -6,6 +6,7 @@ import BlockchainIcon from "../images/Blockchain icon.svg";
 import UxIcon from "../images/UX Icon.svg";
 import DevIcon from "../images/Web Dev Icon.svg";
 import Rectangle from "../images/Rectangle 1.svg";
+import ImageGrid from "../components/ImageGrid";
 
 const Home = () => {
   return (
@@ -117,7 +118,7 @@ const Home = () => {
             </p>
           </div>
           <h4>Trusted by leading brands</h4>
-          <div></div>
+          <div><ImageGrid /></div>
         </div>
       </section>
       <Footer />

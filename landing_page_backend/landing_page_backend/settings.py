@@ -23,13 +23,17 @@ SECRET_KEY = 'django-insecure-g32cv7)smxcdov!yo=@_8ka&xu3@6ld2799)&ph7+i0awh7+9x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'app',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,7 +80,7 @@ DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql',
         "NAME": "landing_page",
-        "USER": "root",
+        "USER": "postgres",
         "PASSWORD": "Katshinda52!",
         "HOST": "localhost",
         "PORT": "3306",

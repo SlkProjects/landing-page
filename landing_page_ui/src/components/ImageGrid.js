@@ -9,7 +9,8 @@ const ImageGrid = () => {
     // Fetching logos with Axios
     const fetchData = async () => {
       try {
-        const response = await axios.get("your-backend-endpoint");
+        const response = await axios.get("http://localhost:8000/api/logos/");
+        console.log(response.data)
         setLogos(response.data);
       } catch (error) {
         console.error("Error fetching images:", error);
@@ -23,7 +24,7 @@ const ImageGrid = () => {
     <div className="image-grid">
       {logos.map((logo, index) => (
         <div key={index} className="logo-item">
-          <img src={logo.url} alt={`logo ${index + 1}`} />
+          <img src={logo.logo} alt={`logo ${index + 1}`} />
         </div>
       ))}
     </div>
