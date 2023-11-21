@@ -9,7 +9,7 @@ const ImageGrid = () => {
     // Fetching logos with Axios
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/logos/");
+        const response = await axios.get("http://localhost:8000/api/logos/?format=json");
         console.log(response.data)
         setLogos(response.data);
       } catch (error) {

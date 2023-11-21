@@ -80,8 +80,8 @@ const Home = () => {
             <img src={Rectangle} alt="" /> Case studies
           </p>
           <div className="case-study-blocks">
-            <div class="image-box" id="image-box-1">
-              <div class="image-box-content">
+            <div className="image-box" id="image-box-1">
+              <div className="image-box-content">
                 <img src={Rectangle} alt="Icon" />
                 <h2>The Olympian</h2>
                 <p>
@@ -90,15 +90,15 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div class="image-box" id="image-box-2">
-              <div class="image-box-content">
+            <div className="image-box" id="image-box-2">
+              <div className="image-box-content">
                 <img src={Rectangle} alt="Icon" />
                 <h2>The Savings Jar</h2>
                 <p>Grow your savings treasure and grow your dragon.</p>
               </div>
             </div>
-            <div class="image-box" id="image-box-3">
-              <div class="image-box-content">
+            <div className="image-box" id="image-box-3">
+              <div className="image-box-content">
                 <img src={Rectangle} alt="Icon" />
                 <h2>Skhokho seMali</h2>
                 <p>
