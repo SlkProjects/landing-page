@@ -10,7 +10,8 @@ const ImageGrid = () => {
     // Fetching logos with Axios
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/logos/?format=json");
+        //const response = await axios.get("http://127.0.0.1:8000/api/logos/?format=json");
+        const response = await axios.get("http://127.0.0.1:8000/api/partners");
         console.log(response.data)
 
          // Sort the logos based on ID (asc - desc)
@@ -43,8 +44,9 @@ const ImageGrid = () => {
         </button><br /><br /><br /><br />
       <div className="image-grid">
         {logos.map((logo, index) => (
-          <div key={index} className="logo-item">
-            <img src={logo.logo} alt={`logo ${index + 1}`} />
+          <div key={index} className="logo-item"> 
+            {/*<img src={logo.logo} alt={`logo ${index + 1}`} />*/}
+            <img src={"http://localhost:8000/images/"+logo.logo} alt={`logo ${index + 1}`} />
           </div>
         ))}
       </div>
