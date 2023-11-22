@@ -25,3 +25,13 @@
     object-fit: cover; 
   }
   
+  @media screen and (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: 1fr; 
+      gap: 3rem; 
+    }
+
+    .logo-item {
+      align-self:flex-start;
+    }
+  }
