@@ -7,6 +7,7 @@ import UxIcon from "../images/UX Icon.svg";
 import DevIcon from "../images/Web Dev Icon.svg";
 import Rectangle from "../images/Rectangle 1.svg";
 import ImageGrid from "../components/ImageGrid";
+import CaseStudiesSlider from "../components/CaseStudiesSlider";
 
 const Home = () => {
   return (
@@ -75,39 +76,12 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="case-studies">
+          <div className="case-studies">
           <p>
             <img src={Rectangle} alt="" /> Case studies
           </p>
-          <div className="case-study-blocks">
-            <div className="image-box" id="image-box-1">
-              <div className="image-box-content">
-                <img src={Rectangle} alt="Icon" />
-                <h2>The Olympian</h2>
-                <p>
-                  The only athlete in the world to do her Olympic routine in
-                  2020.
-                </p>
-              </div>
-            </div>
-            <div className="image-box" id="image-box-2">
-              <div className="image-box-content">
-                <img src={Rectangle} alt="Icon" />
-                <h2>The Savings Jar</h2>
-                <p>Grow your savings treasure and grow your dragon.</p>
-              </div>
-            </div>
-            <div className="image-box" id="image-box-3">
-              <div className="image-box-content">
-                <img src={Rectangle} alt="Icon" />
-                <h2>Skhokho seMali</h2>
-                <p>
-                  Helping South Africans become #CashCleva with Skhokho and
-                  TymeBank.
-                </p>
-              </div>
-            </div>
-          </div>
+          <CaseStudiesSlider />
+          
         </div>
       </section>
       <section>
