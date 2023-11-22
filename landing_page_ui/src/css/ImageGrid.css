@@ -1,3 +1,25 @@
+.sortBtn {
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #70259B;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  border: 0;
+}
+
+.sortBtn:hover {
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: #70259B;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  border: 0;
+}
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
